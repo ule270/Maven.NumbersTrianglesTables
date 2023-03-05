@@ -32,26 +32,43 @@ public class NumberUtilities {
         } return expected;
     }
 
-    public static String getRange(int start) {
-
-        return null;
+    public static String getRange(int stop) {
+        String expected = "";
+        for (Integer i = 0; i < stop; i++) {
+            Integer s = i;
+            expected = expected + s.toString();
+        }
+        return expected;
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        String expected = "";
+        for (Integer i = start; i < stop; i++) {
+            Integer s = i;
+            expected = expected + s.toString();
+        }
+        return expected;
     }
 
-
     public static String getRange(int start, int stop, int step) {
-        return null;
+        String expected = "";
+        for (Integer i = start; i < stop; i++) {
+            if (i % step == 0) {
+                Integer s = i;
+                expected = expected + s.toString();
+            }
+        }
+        return expected;
     }
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-            String expected = "";
-            for (Integer i = start; i <= stop; i++) {
-
-        }
-            return null;
+        String expected = "";
+        for (Integer i = start; i < stop; i++) {
+            if (i%step == 0) {
+                Integer s = (int) Math.pow(i,exponent);
+                expected = expected + s.toString();
+            }
+        } return expected;
     }
 }
