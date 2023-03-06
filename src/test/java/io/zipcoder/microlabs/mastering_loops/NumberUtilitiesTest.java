@@ -7,8 +7,8 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetRange1A() {
         // : Given
-        String expected = "0123456789";
-        int stop = 10;
+        String expected = "012345678910";
+        int stop = 11;
 
         // : When
         String actual = NumberUtilities.getRange(stop);
